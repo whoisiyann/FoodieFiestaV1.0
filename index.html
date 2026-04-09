@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/images/logo-icon.png">
+    <title>Foodie Fiesta</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <div class="nav-logo">
+                <img src="assets/images/logo.png" alt="logo">
+            </div>
+
+            <input type="checkbox" id="menu-toggle-checkbox">
+            <label for="menu-toggle-checkbox" class="menu-toggle"></label>
+
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <a href="#" class="nav-btn">Save a Seat</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="hero" id="Home">
+        <div class="hero-content">
+            <h1>Festive moments with Foodie Fiesta</h1>
+            <p>Bring every celebration to life with authentic Filipino dishes made for sharing, gathering, and unforgetable moments.</p>
+            <a href="#" class="hero-btn">
+                <i class="fa-solid fa-utensils"></i> Explore Menu 
+            </a>
+            <a href="#" class="hero-btn1">
+                <i class="fa-solid fa-gift"></i> View Packages
+            </a>
+        </div>
+    </section>
+
+
+    <section class="menu" id="Menu">
+
+        <h1 class="menu-heading">Handaang Pinoy</h1>
+        <p class="menu-des">Explore dishes served in Filipino celebrations</p>
+
+        <div class="menu-tabs">
+
+            <!-- RADIO BUTTONS -->
+            <input type="radio" name="menu" id="pika" checked>
+            <input type="radio" name="menu" id="main">
+            <input type="radio" name="menu" id="dessert">
+            <input type="radio" name="menu" id="drinks">
+
+            <!-- BUTTONS -->
+            <div class="menu-buttons">
+                <label for="pika">Pika-Pika</label>
+                <label for="main">Main Course</label>
+                <label for="dessert">Desserts</label>
+                <label for="drinks">Drinks</label>
+            </div>
+
+            <!-- CONTENT -->
+            <div class="menu-content">
+
+                <!-- PIKA PIKA -->
+                <div class="menu-item pika">
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="assets/images/Pika-Pika/Lumpiang Shanghai.JPG" alt="Lumpiang Shanghai">
+                        </div>
+                        <div class="food-content">
+                            <h1 class="food-name">Lumpiang Shanghai</h1>
+                            <p class="food-price">₱ 120.00</p>
+                            <p class="food-serving">Good for: 6 pax</p>
+                            <p class="food-note">Note: Prices may vary based on current market rates.</p>
+                            <p class="food-description">Golden-fried spring rolls filled with savory pork and vegetables, crisp in every bite.</p>
+                            <div class="food-allergens">
+                                <h3>Allergens:</h3>
+                                <p>Contains: Pork, Gluten</p>
+                            </div>
+                            <div class="food-places">
+                                <h3>Best place to buy:</h3>
+                                <p><i class="fa-solid fa-location-dot"></i> The Aristocrat Restaurant 432 San Andres St, Malate, Manila</p>
+                            </div>
+                            <button class="order-btn">Order Now <i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="assets/images/Pika-Pika/Barbecue .JPG" alt="Pork Barbecue">
+                        </div>
+                        <div class="food-content">
+                            <h1 class="food-name">Pork Barbecue</h1>
+                            <p class="food-price">₱ 190.00</p>
+                            <p class="food-serving">Good for: 4-6 pax</p>
+                            <p class="food-note">Note: Prices may vary based on current market rates.</p>
+                            <p class="food-description">Sweet and smoky grilled pork skewers to juice perfection</p>
+                            <div class="food-allergens">
+                                <h3>Allergens:</h3>
+                                <p>Contains: Pork </p>
+                            </div>
+                            <div class="food-places">
+                                <h3>Best place to buy:</h3>
+                                <p><i class="fa-solid fa-location-dot"></i>Reyes Barbecue -  Emerald Mansion, Ortigas Center, Pasig</p>
+                            </div>
+                            <button class="order-btn">Order Now <i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="assets/images/Pika-Pika/Kwek-Kwek.JPG" alt="Lumpiang Shanghai">
+                        </div>
+                        <div class="food-content">
+                            <h1 class="food-name">Kwek-Kwek</h1>
+                            <p class="food-price">₱ 120.00</p>
+                            <p class="food-serving">Good for: 4-6 pax</p>
+                            <p class="food-note">Note: Prices may vary based on current market rates.</p>
+                            <p class="food-description">Crispy battered quail eggs served with a sweet and tangy kick.</p>
+                            <div class="food-allergens">
+                                <h3>Allergens:</h3>
+                                <p>Contains: Eggs, Gluten</p>
+                            </div>
+                            <div class="food-places">
+                                <h3>Best place to buy:</h3>
+                                <p><i class="fa-solid fa-location-dot"></i>SM Foodcourt – Various SM Supermalls nationwide</p>
+                            </div>
+                            <button class="order-btn">Order Now <i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 4 -->
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="assets/images/Pika-Pika/Calamares.JPG" alt="Calamares">
+                        </div>
+                        <div class="food-content">
+                            <h1 class="food-name">Calamares</h1>
+                            <p class="food-price">₱ 120.00</p>
+                            <p class="food-serving">Good for: 4-6 pax</p>
+                            <p class="food-note">Note: Prices may vary based on current market rates.</p>
+                            <p class="food-description">Lightly battered squid rings fried golden and served with tangy dip.</p>
+                            <div class="food-allergens">
+                                <h3>Allergens:</h3>
+                                <p>Contains: Seafood, Gluten</p>
+                            </div>
+                            <div class="food-places">
+                                <h3>Best place to buy:</h3>
+                                <p><i class="fa-solid fa-location-dot"></i>The Aristrocrat Restaurant 432 San Andres St, Malate, Manila </p>
+                            </div>
+                            <button class="order-btn">Order Now <i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- MAIN COURSE -->
+                <div class="menu-item main">
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="assets/images/main_course/Lechon_Baboy.png" alt="Lechon Baboy">
+                        </div>
+                        <div class="food-content">
+                            <h1 class="food-name">Lechon Baboy</h1>
+                            <p class="food-price">₱ 6,500.00</p>
+                            <p class="food-serving">Good for: 10-20 pax</p>
+                            <p class="food-note">Note: Prices may vary based on current market rates.</p>
+                            <p class="food-description">Ultra-crispy roasted pork with tender, flavorful meat—our fiesta centerpiece.</p>
+                            <div class="food-allergens">
+                                <h3>Allergens:</h3>
+                                <p>Contains: Pork</p>
+                            </div>
+                            <div class="food-places">
+                                <h3>Best place to buy:</h3>
+                                <p><i class="fa-solid fa-location-dot"></i>Lydia’s Lechon – Roxas Blvd, Baclaran, Parañaque</p>
+                            </div>
+                            <button class="order-btn">Order Now <i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="assets/images/main_course/Sisig.JPG" alt="Pork Sisig">
+                        </div>
+                        <div class="food-content">
+                            <h1 class="food-name">Pork Sisig</h1>
+                            <p class="food-price">₱ 190.00</p>
+                            <p class="food-serving">Good for: 3-5 pax</p>
+                            <p class="food-note">Note: Prices may vary based on current market rates.</p>
+                            <p class="food-description">Sizzling chopped pork with calamansi, onions, and chili for bold flavor.</p>
+                            <div class="food-allergens">
+                                <h3>Allergens:</h3>
+                                <p>Contains: Pork, Soy</p>
+                            </div>
+                            <div class="food-places">
+                                <h3>Best place to buy:</h3>
+                                <p><i class="fa-solid fa-location-dot"></i>Aling Lucing – Glaciano Valdez St, Angeles City, Pampanga</p>
+                            </div>
+                            <button class="order-btn">Order Now <i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="assets/images/Pika-Pika/Calamares.JPG" alt="Calamares">
+                        </div>
+                        <div class="food-content">
+                            <h1 class="food-name">Chicken Inasal</h1>
+                            <p class="food-price">₱ 360.00</p>
+                            <p class="food-serving">Good for: 2-4pax</p>
+                            <p class="food-note">Note: Prices may vary based on current market rates.</p>
+                            <p class="food-description">Bacolod-style grilled chicken marinated for smoky, authentic flavor.</p>
+                            <div class="food-allergens">
+                                <h3>Allergens:</h3>
+                                <p>Contains: Chicken</p>
+                            </div>
+                            <div class="food-places">
+                                <h3>Best place to buy:</h3>
+                                <p><i class="fa-solid fa-location-dot"></i>Mang Inasal – Nationwide locations including SM City Rosales</p>
+                            </div>
+                            <button class="order-btn">Order Now <i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="assets/images/main_course/Kare-Kare.JPG" alt="Kare-Kare">
+                        </div>
+                        <div class="food-content">
+                            <h1 class="food-name">Kare-Kare</h1>
+                            <p class="food-price">₱ 220.00</p>
+                            <p class="food-serving">Good for: 4-6 pax</p>
+                            <p class="food-note">Note: Prices may vary based on current market rates.</p>
+                            <p class="food-description">Tender meat and vegetables in rich peanut sauce with bagoong.</p>
+                            <div class="food-allergens">
+                                <h3>Allergens:</h3>
+                                <p>Contains: Peanuts, Shellfish</p>
+                            </div>
+                            <div class="food-places">
+                                <h3>Best place to buy:</h3>
+                                <p><i class="fa-solid fa-location-dot"></i>Barrio Fiesta – Various locations including SM City North EDSA</p>
+                            </div>
+                            <button class="order-btn">Order Now <i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DESSERT -->
+                <div class="menu-item dessert">
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="assets/images/desserts/Halo-Halo.JPG" alt="Halo-Halo">
+                        </div>
+                        <div class="food-content">
+                            <h1 class="food-name">Halo-Halo</h1>
+                            <p class="food-price">₱ 99.00</p>
+                            <p class="food-serving">Good for: 1-2 pax</p>
+                            <p class="food-note">Note: Prices may vary based on current market rates.</p>
+                            <p class="food-description">Shaved ice dessert with sweet toppings and creamy ube ice cream.</p>
+                            <div class="food-allergens">
+                                <h3>Allergens:</h3>
+                                <p>Contains: Dairy</p>
+                            </div>
+                            <div class="food-places">
+                                <h3>Best place to buy:</h3>
+                                <p><i class="fa-solid fa-location-dot"></i>Razon’s of Guagua – Various locations including Robinson's Place Manila</p>
+                            </div>
+                            <button class="order-btn">Order Now <i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="assets/images/desserts/Leche_Flan.JPG" alt="Leche Flan">
+                        </div>
+                        <div class="food-content">
+                            <h1 class="food-name">Leche Flan</h1>
+                            <p class="food-price">₱ 110.00</p>
+                            <p class="food-serving">Good for: 2-4 pax</p>
+                            <p class="food-note">Note: Prices may vary based on current market rates.</p>
+                            <p class="food-description">Rich silky custard topped with golden caramel syrup.</p>
+                            <div class="food-allergens">
+                                <h3>Allergens:</h3> 
+                                <p>Contains: Eggs, Dairy</p>
+                            </div>
+                            <div class="food-places">
+                                <h3>Best place to buy:</h3>
+                                <p><i class="fa-solid fa-location-dot"></i>Mary Grace Cafe – Various locations including SM City Dagupan</p>
+                            </div>
+                            <button class="order-btn">Order Now <i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="assets/images/desserts/Mango_Float.JPG" alt="Mango Float">
+                        </div>
+                        <div class="food-content">
+                            <h1 class="food-name">Mango Float</h1>
+                            <p class="food-price">₱ 130.00</p>
+                            <p class="food-serving">Good for: 3-5 pax</p>
+                            <p class="food-note">Note: Prices may vary based on current market rates.</p>
+                            <p class="food-description">Creamy chilled layers of mango, graham, and whipped cream.</p>
+                            <div class="food-allergens">
+                                <h3>Allergens:</h3>
+                                <p>Contains: Dairy, Gluten, Mangoes</p>
+                            </div>
+                            <div class="food-places">
+                                <h3>Best place to buy:</h3>
+                                <p><i class="fa-solid fa-location-dot"></i>Max’s Restaurant - SM City Rosales, McArthur Highway, Rosales, Pangasinan</p>
+                            </div>
+                            <button class="order-btn">Order Now <i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="assets/images/desserts/Turon.JPG" alt="Turon">
+                        </div>
+                        <div class="food-content">
+                            <h1 class="food-name">Turon</h1>
+                            <p class="food-price">₱ 60.00</p>
+                            <p class="food-serving">Good for: 2-4 pax</p>
+                            <p class="food-note">Note: Prices may vary based on current market rates.</p>
+                            <p class="food-description">Caramelized saba and jackfruit wrapped in crispy golden pastry.</p>
+                            <div class="food-allergens">
+                                <h3>Allergens:</h3>
+                                <p>Contains: Gluten</p>
+                            </div>
+                            <div class="food-places">
+                                <h3>Best place to buy:</h3>
+                                <p><i class="fa-solid fa-location-dot"></i> SM Supermarket – SM City Dagupan and Rosales branches</p>
+                            </div>
+                            <button class="order-btn">Order Now <i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DRINKS -->
+                <div class="menu-item drinks">
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="assets/images/drinks/Iced_Tea.JPG" alt="Iced Tea">
+                        </div>
+                        <div class="food-content">
+                            <h1 class="food-name">Iced Tea</h1>
+                            <p class="food-price">₱ 150.00</p>
+                            <p class="food-serving">Good for: 4-5  pax</p>
+                            <p class="food-note">Note: Prices may vary based on current market rates.</p>
+                            <p class="food-description">Freshly brewed house iced tea served perfectly chilled.</p>
+                            <div class="food-allergens">
+                                <h3>Allergens:</h3>
+                                <p>None </p>
+                            </div>
+                            <div class="food-places">
+                                <h3>Best place to buy:</h3>
+                                <p><i class="fa-solid fa-location-dot"></i>Wendy’s Philippines – Various locations including SM City Clark</p>
+                            </div>
+                            <button class="order-btn">Order Now <i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="assets/images/drinks/Sago't_Gulaman.JPG" alt="Sago't Gulaman">
+                        </div>
+                        <div class="food-content">
+                            <h1 class="food-name">Sago’t Gulaman</h1>
+                            <p class="food-price">₱ 180.00</p>
+                            <p class="food-serving">Good for: 1-4 pax</p>
+                            <p class="food-note">Note: Prices may vary based on current market rates.</p>
+                            <p class="food-description">Sweet brown sugar drink with chewy sago and jelly cubes.</p>
+                            <div class="food-allergens">
+                                <h3>Allergens:</h3>
+                                <p>None </p>
+                            </div>
+                            <div class="food-places">
+                                <h3>Best place to buy:</h3>
+                                <p><i class="fa-solid fa-location-dot"></i>Chowking – Nationwide locations including Dagupan City </p>
+                            </div>
+                            <button class="order-btn">Order Now <i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="assets/images/drinks/Calamansi_Juice.JPG" alt="Calamansi Juice">
+                        </div>
+                        <div class="food-content">
+                            <h1 class="food-name">Calamansi Juice</h1>
+                            <p class="food-price">₱ 100.00</p>
+                            <p class="food-serving">Good for: 1-4 pax </p>
+                            <p class="food-note">Note: Prices may vary based on current market rates.</p>
+                            <p class="food-description">Fresh citrus cooler with a bright, tangy kick and a refreshing burst of flavor</p>
+                            <div class="food-allergens">
+                                <h3>Allergens:</h3>
+                                <p>None </p>
+                            </div>
+                            <div class="food-places">   
+                                <h3>Best place to buy:</h3>
+                                <p><i class="fa-solid fa-location-dot"></i>Mary Grace Cafe – Various locations including SM City Dagupan</p>
+                            </div>
+                            <button class="order-btn">Order Now <i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="assets/images/drinks/Buko_Juice.JPG" alt="Buko Juice">
+                        </div>
+                        <div class="food-content">
+                            <h1 class="food-name">Buko Juice</h1>
+                            <p class="food-price">₱ 70.00</p>
+                            <p class="food-serving">Good for: 1-4 pax</p>
+                            <p class="food-note">Note: Prices may vary based on current market rates.</p>
+                            <p class="food-description">Naturally sweet coconut water served fresh and chilled</p>
+                            <div class="food-allergens">
+                                <h3>Allergens:</h3>
+                                <p>None </p>
+                            </div>
+                            <div class="food-places">
+                                <h3>Best place to buy:</h3>
+                                <p><i class="fa-solid fa-location-dot"></i>Coco Fresh – Various mall kiosks and standalone stores</p>
+                            </div>
+                            <button class="order-btn">Order Now <i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="view-menu-btn">View Full Menu <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </section>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="reservation-section">
+
+    <!-- LEFT SIDE -->
+    <div class="form-box">
+        <span class="tag">RESERVATIONS</span>
+        <h1>Let’s save you a seat!</h1>
+        <p class="subtitle">Your seat is already warm! All you have to do is book it!</p>
+
+        <form>
+            <div class="row">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+
+            <div class="row">
+                <input type="text" placeholder="Phone Number">
+                <input type="number" placeholder="Number of Guests">
+            </div>
+
+            <div class="row">
+                <input type="date">
+                <input type="time">
+            </div>
+
+            <textarea placeholder="Special Requests (Optional)"></textarea>
+
+            <button type="submit" class="reservation-btn">Confirm Reservation</button>
+        </form>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="info-box">
+
+        <div class="image-box">
+            <img src="assets/images/save-a-seat.png" alt="restaurant">
+        </div>
+
+        <div class="info-content">
+            <h2>Visit Us</h2>
+
+            <div class="info-item">
+                <h3><i class="fa-solid fa-location-dot"></i> Address</h3>
+                <p>Dagupan City, Pangasinan Philippines, 2400</p>
+            </div>
+
+            <div class="info-item">
+                <h3><i class="fa-solid fa-clock"></i>Hours</h3>
+                <p>Mon-Sun: 10:00 AM – 10:00 PM
+                </p>
+            </div>
+
+            <div class="info-item">
+                <h3> <i class="fa-solid fa-phone"></i>Mobile  No.</h3>
+                <p class="highlight">+63 998 765 4321 <br>
+                                    +63 912 345 6789
+                </p>
+            </div>
+
+            <div class="info-item">
+                <h3><i class="fa-solid fa-envelope"></i>Email</h3>
+                <p>hello@foodiefiesta.com</p>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <!-- LEFT -->
+            <div class="footer-column brand">
+                <img src="assets/images/logo.png" alt="Foodie Fiesta Logo">
+                <h2>Bringing festive moments together</h2>
+                <p>
+                    We believe that every meal should feel like a celebration. Our platform is dedicated to preserving Filipino culinary traditions while making them accessible in the digital age.
+                </p>
+
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <!-- MENU -->
+            <div class="footer-column">
+                <h3>Our Menu</h3>
+                <ul>
+                    <li><a href="#">Pika-Pika</a></li>
+                    <li><a href="#">Main Course</a></li>
+                    <li><a href="#">Desserts</a></li>
+                    <li><a href="#">Drinks</a></li>
+                    <li><a href="#">Packages</a></li>
+                </ul>
+            </div>
+
+            <!-- LINKS -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Reservations</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+            </div>
+
+            <!-- SUBSCRIBE -->
+            <div class="footer-column">
+                <h3>STAY UPDATED</h3>
+                <p>Subscribe to get special offers and event updates</p>
+
+                <div class="subscribe-box">
+                    <input class="footer-input" type="email" placeholder="Your Email">
+                    <button class="footer-btn">Subscribe</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 FoodieFiesta. All rights reserved.</p>
+
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
