@@ -710,7 +710,7 @@ body{
 
 
 
-/* ---------------------------------------------- ABOUT  SECTION*/
+/* ---------------------------------------------- ABOUT SECTION*/
 
 .about {
     background: #f5ecd7;
@@ -758,7 +758,7 @@ body{
     justify-content: left;
     gap: 10px;
 
-    width: 300px;
+    width: 290px;
     padding: 15px 40px;
     font-weight: 600;
 
@@ -850,6 +850,11 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    max-width: 1800px;   /* limit width */
+    width: 100%;
+    margin: 0 auto;      /* center */
+    padding: 0 20px;     /* space sa sides para hindi dikit */
 }
 
 .gallery-heading {
@@ -868,7 +873,10 @@ body{
 .gallery-container .box {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+
+        justify-content: center; /* instead of space-between */
+    gap: 20px;               /* spacing between columns */
+    width: 100%;
 }
 
 .gallery-container .box .dream {
@@ -1779,6 +1787,10 @@ textarea{
         text-decoration: none;
     }
 
+    .overlay {
+        font-size: 10px;
+        font-weight: 600;
+    }
 
 
     /* ---------------- RESERVATION MOBILE ---------------- */
