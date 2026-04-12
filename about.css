@@ -446,7 +446,7 @@ border-radius: 24px;
     pointer-events: none;
 }
 .descover .flag img {
-    width: 2200px;
+    width: 100%;
     height: auto;
 }
 
@@ -690,22 +690,6 @@ border-radius: 24px;
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /* ----------------------------------------DESCOVER SECTION MOBILE*/
 
     .descover {
@@ -728,12 +712,12 @@ border-radius: 24px;
 
     .descover .flag {
         top: 0%;
-        left: 20%;
+        left: 45%;
     }
 
 
     .descover .flag img {
-        width: 150%;
+        width: 110%;
     }
 
     .descover-btn {
