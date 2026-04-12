@@ -615,98 +615,6 @@ body{
 
 
 
-/* ================= MOBILE RESPONSIVE PACKAGES ================= */
-@media (max-width: 768px) {
-
-    .packages {
-        padding: 40px 15px;
-    }
-
-    .flag img {
-        width: 700px;
-        height: auto;
-    }
-
-    .packages-heading {
-        font-size: 32px;
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    .packages-description {
-        font-size: 16px;
-        text-align: center;
-        padding: 0 10px;
-    }
-
-    /* STACK CARDS */
-    .packages-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    /* CARD FIX */
-    .packages-card {
-        width: 100%;
-        max-width: auto;
-        height: auto; /* IMPORTANT */
-    }
-
-    /* IMAGE */
-    .packages-image img {
-        height: 200px;
-    }
-
-    /* TEXT SCALE DOWN */
-    .packages-name {
-        font-size: 22px;
-        text-align: left;
-    }
-
-    .packages-tag {
-        font-size: 13px;
-        text-align: left;
-    }
-
-    .packages-price {
-        font-size: 20px;
-        text-align: left;
-    }
-
-    .packages-note {
-        text-align: left;
-    }
-
-    .inclusions-title {
-        text-align: left;
-    }
-
-    .packages-features {
-        font-size: 14px;
-        text-align: left;
-    }
-
-    .inclusions-list {
-        font-size: 13px;
-    }
-
-    .order-btn {
-        font-size: 10px;
-        margin-top: 10px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -715,7 +623,7 @@ body{
 .about {
     background: #f5ecd7;
     padding: 120px 10%;
-    background-image: url('assets/images/about/Banig.png');
+    background: url('assets/images/about/Banig.png')center/cover no-repeat;
 }
 
 .about-container {
@@ -798,7 +706,6 @@ body{
 }
 
 
-/* RIGHT SIDE */
 .about-images {
     flex: 1;
     display: flex;
@@ -851,10 +758,10 @@ body{
     align-items: center;
     text-align: center;
 
-    max-width: 1800px;   /* limit width */
+    max-width: 1800px;   
     width: 100%;
-    margin: 0 auto;      /* center */
-    padding: 0 20px;     /* space sa sides para hindi dikit */
+    margin: 0 auto; 
+    padding: 0 20px;
 }
 
 .gallery-heading {
@@ -874,8 +781,8 @@ body{
     display: flex;
     flex-direction: row;
 
-        justify-content: center; /* instead of space-between */
-    gap: 20px;               /* spacing between columns */
+        justify-content: center;
+    gap: 20px;
     width: 100%;
 }
 
@@ -960,10 +867,6 @@ body{
 
 
 
-
-
-
-
 /* ---------------------------------------------- RESERVATION SECTION*/
 
 .reservation-section{
@@ -973,7 +876,7 @@ body{
     align-items: flex-start;
 }
 
-/* LEFT SIDE */
+
 .form-box{
     flex: 1;
 }
@@ -996,7 +899,7 @@ body{
     margin-bottom: 25px;
 }
 
-/* form */
+
 form{
     display: flex;
     flex-direction: column;
@@ -1152,8 +1055,6 @@ textarea{
 }
 
 
-
-/* BRAND */
 .brand h2 {
     font-size: 22px;
     color: #fff;
@@ -1170,7 +1071,7 @@ textarea{
     line-height: 1.6;
 }
 
-/* SOCIAL */
+
 .social-links {
     display: flex;
     gap: 12px;
@@ -1227,7 +1128,6 @@ textarea{
     background: #e22d23;
 }
 
-/* BOTTOM */
 .footer-bottom {
     margin-top: 50px;
     padding-top: 20px;
@@ -1300,7 +1200,7 @@ textarea{
         font-size: 28px;
         cursor: pointer;
         z-index: 1500;
-        color: #2C5439;
+        color: #111;
         user-select: none;
     }
 
