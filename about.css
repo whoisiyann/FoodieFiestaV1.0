@@ -189,7 +189,7 @@
     color: white;
     padding: 6px 18px;
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 20px;
     display: inline-block;
     margin-bottom: 15px;
 }
@@ -282,6 +282,7 @@
     padding: 6px 18px;
     border-radius: 20px;
     font-size: 30px;
+    font-weight: 600;
     display: inline-block;
     margin-bottom: 15px;
 }
@@ -431,114 +432,99 @@ border-radius: 24px;
     background: linear-gradient(135deg, #d7b899, #a1887f);
 }
 
-@media (width <= 600px) {
 
-    .team-tag {
+
+
+/* ----------------------------------------DESCOVER SECTION */
+
+.descover .flag {
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    pointer-events: none;
+}
+.descover .flag img {
+    width: 2200px;
+    height: auto;
+}
+
+
+.descover {
+    background: #5b401e;
+    text-align: center;
+    padding: 0 0 50px 0;
+    color: #ffffff;
+}
+
+.descover .descover-tag {
+    background: #df493f;
+    color: white;
+    padding: 6px 50px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.descover h1 {
+    font-size: 60px;
+}
+
+.descover span {
+    color: #F6C453;
+}
+
+.descover p {
     font-size: 20px;
-    }
-
-    .team-container h1 {
-        font-size: 30px;
-        max-width: 400px;
-        padding: 10px 40px;
-    }
-
-    .team-container p {
-        font-size: 15px;
-        margin: auto;
-        margin-bottom: 150px;
-        padding: 0 20px;
-    }
-
-    .team {
-        padding: 50px 0;
-    }
-
-    .team-card-container .card {
-        margin: 0 40px;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-bottom: 60px;
-        width: 100%;
-        text-align: center;
-        flex-direction: column;
-        margin-bottom: 100px;
-    }
-
-    .team-card-container .card-content .buttons {
-        justify-content: center;
-    }
-
-    .team-card-container .card-content h2 {
-        margin-right: 0;
-    }
-
-    .img-container {
-        margin: -100px 0 30px 0;
-        width: 100%;
-    }
-
-    .img-container img {
-        width: 100%;
-        max-width: 1000px;
-        height: 250px;
-    }
-
-    .team-card-container .card-content p {
-        max-width: 400px;
-    }
 }
 
 
-@media (width <= 420px) {
+.descover-btn {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
 
-    .img-container {
-        width: 50vw;
-        height: 50vw;
-        margin: -140px 0 30px 0;
-        border-radius: 50%;
-    }
-
-    .img-container img {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-    }
+.descover-btn a{
+    font-size:25px;
+    padding:12px 30px;
+    background:#0F7009;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:600;
+    transition: 0.3s;
 }
 
 
+.descover-btn a:hover{
+    background: #13910C;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
 
+.descover-btn .primary {
+    font-size: 25px;
+    border: 1px solid #d7ccc8;
+    background-color: transparent;
+    color: #fff8f0;
+    min-width: 100px;
+    text-align: center;
+    border-radius:10px;
+    text-decoration: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.descover-btn .primary:hover {
+    background: #c69c6d;
+    color: #fff;
+    border-color: #c69c6d;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(198, 156, 109, 0.4);
+}
 
 
 
@@ -619,6 +605,89 @@ border-radius: 24px;
     }
 
 
+    /* ---------------------------------------- TEAM SECTION MOBILE*/
+
+    .team-tag {
+    font-size: 20px;
+    }
+
+    .team-container h1 {
+        font-size: 30px;
+        max-width: 400px;
+        padding: 10px 40px;
+    }
+
+    .team-container p {
+        font-size: 15px;
+        margin: auto;
+        margin-bottom: 80px;
+        padding: 0 20px;
+    }
+
+    .team {
+        padding: 50px 0;
+    }
+
+    .team-card-container .card {
+        margin: 0 10px;
+        padding: 20px;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+
+    .img-container {
+        margin: -80px 0 20px 0;
+        width: 100%;
+    }
+
+    .img-container {
+        width: 140px;
+        height: 140px;
+        margin: -70px auto 15px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .team-card-container .card-content {
+        padding: 0 10px;
+    }
+
+    .team-card-container .card-content h2 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .team-card-container .card-content h3 {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .team-card-container .card-content p {
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+
+    }
+
+    .team-card-container .card-content .buttons {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .team-card-container .card-content .buttons a {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
 
 
 
@@ -632,6 +701,55 @@ border-radius: 24px;
 
 
 
+
+
+
+
+
+    /* ----------------------------------------DESCOVER SECTION MOBILE*/
+
+    .descover {
+        padding: 0 20px;
+    }
+
+    .descover .descover-tag {
+        font-size: 18px;
+        padding: 6px 20px;
+    }
+
+    .descover h1 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .descover p {
+        font-size: 16px;
+    }
+
+    .descover .flag {
+        top: 0%;
+        left: 20%;
+    }
+
+
+    .descover .flag img {
+        width: 150%;
+    }
+
+    .descover-btn {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .descover-btn a {
+        width: 90%;
+        font-size: 18px;
+        margin: auto;
+    }
+
+    .descover-btn .primary {
+        font-size: 18px;
+    }
 
 }
 
