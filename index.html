@@ -14,9 +14,12 @@
     <nav class="navbar">
         <div class="nav-container">
 
-            <div class="nav-logo">
-                <img src="assets/images/logo.png" alt="logo">
-            </div>
+            <a href="#Home">
+                <div class="nav-logo">
+                    <img src="assets/images/logo.png" alt="logo">
+                </div>
+            </a>
+
 
             <input type="checkbox" id="menu-toggle-checkbox">
             <label for="menu-toggle-checkbox" class="menu-toggle"></label>
@@ -816,6 +819,19 @@
             </div>
         </div>
     </footer>
+
+
+    <script>
+        const menuCheckbox = document.getElementById("menu-toggle-checkbox");
+        const navLinks = document.querySelectorAll(".nav-menu a, .nav-btn");
+    
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                menuCheckbox.checked = false;
+            });
+        });
+    </script>
+
 
 </body>
 </html>
