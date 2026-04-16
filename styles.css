@@ -239,6 +239,9 @@ body{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 
     transition: transform 0.35s ease, box-shadow 0.35s ease;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .food-card:hover {
@@ -266,6 +269,10 @@ body{
 .food-content {
     padding: 0 20px 20px;
     color: #000000;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .food-name {
@@ -302,7 +309,7 @@ body{
 
 .food-allergens,
 .food-places {
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 .food-allergens {
@@ -334,7 +341,7 @@ body{
     font-size: 14px;
 }
 
-.order-btn {
+.food-card .order-btn {
     width: 100%;
     background-color: #2C5439;
     color: white;
@@ -345,9 +352,11 @@ body{
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
+
+    margin-top: auto; /* 🔥 IMPORTANT */
 }
 
-.order-btn:hover {
+.food-card .order-btn:hover {
     background-color: #23432d;
 }
 
@@ -590,7 +599,7 @@ body{
     margin-top: 5px;
 }
 
-.order-btn {
+.packages .order-btn {
     width: 100%;
     padding: 12px;
     background: #2C5439;
@@ -604,11 +613,11 @@ body{
     transition: 0.3s;
 }
 
-.order-btn:hover {
+.packages .order-btn:hover {
     background: #23432d;
 }
 
-.order-btn i {
+.packages .order-btn i {
     margin-left: 8px;
 }
 
@@ -1440,8 +1449,9 @@ textarea{
         font-size: 12px;
     }
 
-    .order-btn {
+    .food-card .order-btn {
         font-size: 16px;
+        padding: 7px;
     }
 
     .view-menu-btn {
@@ -1570,8 +1580,9 @@ textarea{
         font-size: 13px;
     }
 
-    .order-btn {
-        font-size: 10px;
+    .packages .order-btn {
+        font-size: 16px;
+        padding: 7px;
         margin-top: 10px;
     }
 
