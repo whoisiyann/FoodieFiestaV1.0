@@ -692,20 +692,37 @@
             <h1>Let’s save you a seat!</h1>
             <p class="subtitle">Your seat is already warm! All you have to do is book it!</p>
 
-            <form>
+            <form id="reservationForm">
                 <div class="row">
-                    <input type="text" placeholder="Your Name">
-                    <input type="email" placeholder="Email Address">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Email Address" required>
                 </div>
 
                 <div class="row">
-                    <input type="text" placeholder="Phone Number">
-                    <input type="number" placeholder="Number of Guests">
+                    <input type="tel" placeholder="Phone Number" required>
+                    <input type="number" placeholder="Number of Guests" min="1" max="20" required>
                 </div>
 
                 <div class="row">
-                    <input type="date">
-                    <input type="time">
+                    <input type="date" id="date" required>
+                    <div class="select-wrapper">
+                        <select id="time" required>
+                            <option value="" disabled selected>Select Time</option>
+                            <option value="10:00">10:00 AM</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="13:00">1:00 PM</option>
+                            <option value="14:00">2:00 PM</option>
+                            <option value="15:00">3:00 PM</option>
+                            <option value="16:00">4:00 PM</option>
+                            <option value="17:00">5:00 PM</option>
+                            <option value="18:00">6:00 PM</option>
+                            <option value="19:00">7:00 PM</option>
+                            <option value="20:00">8:00 PM</option>
+                            <option value="21:00">9:00 PM</option>
+                            <option value="22:00">10:00 PM</option>
+                        </select>
+                    </div>
                 </div>
 
                 <textarea placeholder="Special Requests (Optional)"></textarea>
@@ -779,7 +796,7 @@
                     <li><a href="#Menu" >Menu</a></li>
                     <li><a href="#About">About</a></li>
                     <li><a href="#Gallery">Gallery</a></li>
-                    <li><a href="#Reservation">Contanct</a></li>
+                    <li><a href="#Reservation">Contact</a></li>
                     <li><a href="about.html#Team">Team</a></li>
                 </ul>
             </div>
